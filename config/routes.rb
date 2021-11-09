@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  # set routes to access view
+  root to: 'recipes#home'
+    get "/:id", to: "recipes#show", as: :recipe
 end

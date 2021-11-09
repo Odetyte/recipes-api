@@ -1,0 +1,9 @@
+<%  #view to load all the recipes %>
+<h1>Recipes</h1>
+
+<% @recipes.each do |recipe| %>
+    <%= link_to recipe_path(recipe) do %>
+        <h2><%= recipe.title %> </h2>
+        <img src="<%= recipe.photo %>" />   
+    <% end %>
+<% end %>

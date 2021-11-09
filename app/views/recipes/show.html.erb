@@ -1,0 +1,17 @@
+<%  # view to load all the one recipe %>
+<div class='recipe-container'>
+<%= link_to 'Go BAck', root_path %>
+    <h2><%= @recipe.title %> </h2>
+    <img src="<%= @recipe.photo %>" />
+    <% if @recipe.tags %>
+        <p> TAGS: <%= @recipe.tags %> </p>
+    <% else %>
+        <p>Tags: none</p>
+    <% end %>
+    <% if @recipe.chef_name %>
+        <p> CHEF: <%= @recipe.chef_name %> </p>
+    <% else %>
+        <p>CHEF: unknown</p>
+    <% end %>
+        <p><%= @recipe.description %> </p>
+</div>
