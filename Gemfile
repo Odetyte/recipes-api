@@ -24,7 +24,7 @@ gem 'jbuilder', '~> 2.7'
 
 # Use contentful for api managment
 gem 'contentful'
-# Use dontenv for security
+# Use dontenv for security to store sensitive data
 gem 'dotenv-rails', groups: [:development, :test]
 
 # Use Active Storage variant
